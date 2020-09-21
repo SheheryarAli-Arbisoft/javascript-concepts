@@ -1,29 +1,43 @@
-// // Global scope
-// var greeting = 'Hello World';
+/*
+ * When a variable is declared outside of all functions and can be accessed anywhere in the
+ * program then that variable is said to have Global Scope.
+ */
 
-// function sayHi() {
-//   console.log(greeting);
-// }
+var greeting1 = 'Hello World 1';
 
-// sayHi();
+function func1() {
+  console.log(greeting1);
+}
 
-// // Local / Function scope
-// function sayHi() {
-//   var greeting = 'Hello World';
-//   console.log(greeting);
-// }
+func1();
 
-// console.log(greeting);
+/*
+ * When a variable is declared in a function then it can be accessed only in that function
+ * and its nested code blocks and not from outside the function. This type of variable is said
+ * to have Local or Function Scope.
+ */
 
-// // Block scope
-// function sayHi(x) {
-//   if (x == 1) {
-//     let greeting = 'Hello World';
-//   } else {
-//     const greeting = 'Good Bye';
-//   }
+function func2() {
+  var greeting2 = 'Hello World';
+  console.log(greeting2);
+}
 
-//   console.log(greeting);
-// }
+console.log(greeting2);
 
-// sayHi(1);
+/*
+ * When a variable is declared inside a code block using the 'let' or 'const' keyword then it
+ * can be accessed only in that code block and not from outside even in the function in which
+ * the code block is present. This type of variable is said to have Block Scope.
+ */
+
+function func3(x) {
+  if (x == 1) {
+    let greeting3 = 'Hello World';
+  } else {
+    const greeting3 = 'Good Bye';
+  }
+
+  console.log(greeting3);
+}
+
+func3(1);

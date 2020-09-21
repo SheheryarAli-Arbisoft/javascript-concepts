@@ -34,3 +34,8 @@ console.log(arr);
 // To remove one value from the start of the array the shift() method is used
 arr.shift();
 console.log(arr);
+
+// To iterate over the elements in an array a for loop or for..of loop can be used.
+for (let i = 0; i < arr.length; i++) {
+  console.log(arr[i]);
+}
