@@ -1,11 +1,12 @@
 /*
  * An array can declared by either of the following notations:
  *
- * Object notation i.e. new Array()
- * Literal notation i.e. []
+ * 1. Object notation i.e. new Array()
+ * 2. Literal notation i.e. []
  *
  * Note: The literal notation is most commonly used
  */
+
 const arr = [1, 2, 3, 4, 5];
 
 // To get the length of the array we can use the length property

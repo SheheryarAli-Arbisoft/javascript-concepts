@@ -5,6 +5,7 @@ let x = 1;
  * any of the comparison operators (<, >, <=. >=, ==, ===, !=, !==)
  * and check any condition using the logical operators (&&, ||, !)
  */
+
 if (x == 1) {
   console.log('One');
 } else if (x == 2) {
@@ -21,6 +22,7 @@ if (x == 1) {
  * would be entered because strict equality check on the basis of logical value and also
  * by data type
  */
+
 switch (x) {
   case 1:
     console.log('One');
