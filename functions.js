@@ -10,7 +10,9 @@
 func1();
 // console.log(func1());
 
-function func1() {
+// Default text can also be passed to function i.e. if the parameter is passed then the
+// passed value is used else the specified default value is used
+function func1(text = 'Default text') {
   console.log('Hello World 1');
   //   return 'Hello World 1';
 }

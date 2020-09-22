@@ -48,6 +48,13 @@ user.sayHi();
 console.log(user);
 console.log(user.getDetails());
 
+// To iterate over the properties of an object the for..in loop can be used. The for..in loop
+// fetches each property of the object and we can use that property to print the
+// corresponding values
+for (let key in user) {
+  console.log(`${key}: ${user[key]}`);
+}
+
 // To delete a property the delete keyword is used along with the property to be deleted
 delete user.age;
 console.log(user);
