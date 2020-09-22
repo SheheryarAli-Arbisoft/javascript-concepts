@@ -17,6 +17,19 @@ const user = {
   name: 'Sheheryar',
   age: 22,
 
+  // Property setters and getters can also be used by which we can add custom login when
+  // fetching or setting a value to a property.
+  set age(value) {
+    if (value < 0) {
+      throw new Error('No negative value allowed for age');
+    }
+    this.age = value;
+  },
+
+  get age() {
+    return this.age;
+  },
+
   // Methods can be added by the following short hand notation or using function expressions
   // or arrow functions e.g. property_name: function
   getDetails() {

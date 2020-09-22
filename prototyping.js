@@ -22,6 +22,8 @@ function SoftwareEngineer(person, experience) {
 
 let p1 = new Person('Sheheryar', 'Ali');
 
+// SoftwareEngineer.prototype = p1;
+
 // Since this function is not defined in the constructor it is fetched from the prototype object
 p1.getFullName();
 
