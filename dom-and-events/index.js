@@ -43,3 +43,6 @@ result1[1].addEventListener('mouseleave', () => {
 
 // We can also customize individual css properties by manipulating the style attribute
 result1[2].style = 'background-color: yellow';
+
+// Since style attribute is an object so we can also add properties in this manner.
+// result1[2].style['backgroundColor'] = 'red';
