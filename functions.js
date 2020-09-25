@@ -7,13 +7,14 @@
  * know that the internal functionality will be the same in every situation
  */
 
-func1();
+func1('abc');
 // console.log(func1());
 
 // Default text can also be passed to function i.e. if the parameter is passed then the
 // passed value is used else the specified default value is used
-function func1(text = 'Default text') {
-  console.log('Hello World 1');
+function func1(text = 'Default text', text1) {
+  console.log(text);
+  console.log(text1);
   //   return 'Hello World 1';
 }
 

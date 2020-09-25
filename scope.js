@@ -3,13 +3,13 @@
  * program then that variable is said to have Global Scope.
  */
 
-var greeting1 = 'Hello World 1';
+// var greeting1 = 'Hello World 1';
 
-function func1() {
-  console.log(greeting1);
-}
+// function func1() {
+//   console.log(greeting1);
+// }
 
-func1();
+// func1();
 
 /*
  * When a variable is declared in a function then it can be accessed only in that function
@@ -17,12 +17,12 @@ func1();
  * to have Local or Function Scope.
  */
 
-function func2() {
-  var greeting2 = 'Hello World';
-  console.log(greeting2);
-}
+// function func2() {
+//   var greeting2 = 'Hello World';
+//   console.log(greeting2);
+// }
 
-console.log(greeting2);
+// console.log(greeting2);
 
 /*
  * When a variable is declared inside a code block using the 'let' or 'const' keyword then it
@@ -37,7 +37,21 @@ function func3(x) {
     const greeting3 = 'Good Bye';
   }
 
-  console.log(greeting3);
+  function func4() {
+    // console.log(greeting3);
+
+    function func5() {
+      console.log(greeting3);
+    }
+
+    func5();
+  }
+
+  // console.log(greeting3);
+
+  func4();
 }
+
+var greeting3 = 'Another';
 
 func3(1);
